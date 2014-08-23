@@ -1,0 +1,7 @@
+<% if user_signed_in? %>
+  <h2>Logged in as <%= current_user.name %></h2>
+  <p><%= link_to "Logout", users_sign_out_path, method: :delete %></p>
+<% else %>
+  <h2>Not logged in</h2>
+  <%= link_to "Sign in with OAuth2", user_omniauth_authorize_path(:oauth) %>
+<% end %>
