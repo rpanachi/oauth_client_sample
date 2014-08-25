@@ -10,6 +10,7 @@ A sample application using Devise with OmniAuth to authenticate users
 === Installation
 
   bundle install
+  bundle exec rake db:create db:migrate
 
 === Usage
 
