@@ -1,28 +1,24 @@
-== README
+== OmniAuth client example
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A sample application using Devise with OmniAuth to authenticate users
 
-Things you may want to cover:
+=== Dependencies
 
-* Ruby version
+* Ruby 2.1.2
+* Postgresql
 
-* System dependencies
+=== Installation
 
-* Configuration
+  bundle install
 
-* Database creation
+=== Usage
 
-* Database initialization
+Start server running
 
-* How to run the test suite
+  OAUTH_ID=appid OAUTH_SECRET=123456 OAUTH_URL="http://oauth.server.com" bundle exec rails s
 
-* Services (job queues, cache servers, search engines, etc.)
+and navigate to http://localhost:3000
 
-* Deployment instructions
+=== References
 
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+https://github.com/plataformatec/devise/wiki/OmniAuth:-Overview
